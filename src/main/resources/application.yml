@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bookshop
+    username: root
+    password: Navindu@12
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        "[format_sql]": true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    
+server:
+  port: 8081
+
+application:
+  bookstore:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000
+    upload:
+      directory: G:\\IJSE LECS\\Uploads 
+
+# spring.datasource.url=jdbc:mysql://localhost:3306/bookstore
+# spring.datasource.username=root
+# spring.datasource.password=Navindu@12
+# spring.jpa.hibernate.ddl-auto=update
+
+# server.port=8081
+
+# bookstore.jwt.secret=9c56cc51b374c3ba189210d5b6d4bf57790d351c96c47c02190ecf1e430635ab
+
+# bookstore.jwt.jwtExpiration=86400000
